@@ -1,5 +1,5 @@
-#
 Summary:	GPE File manager
+Summary(pl.UTF-8):	Zarządca plików GPE
 Name:		gpe-filemanager
 Version:	0.25
 Release:	1
@@ -7,14 +7,17 @@ License:	GPL
 Group:		Applications/Communications
 Source0:	http://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.gz
 # Source0-md5:	625cb4e7a316c3a17f5cedca90dc3cb7
-URL:		http://gpe.linuxtogo.org
+URL:		http://gpe.linuxtogo.org/
 BuildRequires:	gtk+2-devel >= 2:2.10.7
 BuildRequires:	libgpewidget-devel
-Requires: gpe-icons
+Requires:	gpe-icons
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GPE file manager, for embedded devices
+GPE file manager, for embedded devices.
+
+%description -l pl.UTF-8
+Zarządca plików GPE dla urządzeń wbudowanych.
 
 %prep
 %setup -q
